@@ -1,10 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import './header.css'
 
 const Header = ({ siteTitle }) => (
   <div
     style={{
-      background: 'rebeccapurple',
+      background: '#cdeaf2',
       marginBottom: '1.45rem',
     }}
   >
@@ -19,12 +20,42 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: 'white',
+            color: 'black',
             textDecoration: 'none',
           }}
         >
           {siteTitle}
         </Link>
+        <Link
+          to="/work"
+            style={{
+            color: 'black',
+            textDecoration: 'none',
+            float: 'right',
+          }}
+          >
+          Work
+          </Link>
+          <Link
+          to="/about"
+            style={{
+            color: 'black',
+            textDecoration: 'none',
+            float: 'right'
+          }}
+          >
+          About
+          </Link>
+          <Link
+          to="/contact"
+            style={{
+            color: 'black',
+            textDecoration: 'none',
+            float: 'right'
+          }}
+          >
+          Contact
+          </Link>
       </h1>
     </div>
   </div>
