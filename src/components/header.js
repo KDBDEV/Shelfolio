@@ -1,9 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import './header.css'
+import './header.scss'
+import logo from "../assets/img/logo.png";
 
 const Header = ({ siteTitle }) => (
   <div
+    className = "navbar"
     style={{
       background: '#cdeaf2',
       marginBottom: '1.45rem',
@@ -16,7 +18,6 @@ const Header = ({ siteTitle }) => (
         padding: '1.45rem 1.0875rem',
       }}
     >
-      <h1 style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
@@ -24,7 +25,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: 'none',
           }}
         >
-          {siteTitle}
+        <img src={logo} alt="Logo" />
         </Link>
         <Link
           to="/work"
@@ -34,7 +35,7 @@ const Header = ({ siteTitle }) => (
             float: 'right',
           }}
           >
-          Work
+          Work 
           </Link>
           <Link
           to="/about"
@@ -44,7 +45,7 @@ const Header = ({ siteTitle }) => (
             float: 'right'
           }}
           >
-          About
+          About 
           </Link>
           <Link
           to="/contact"
@@ -54,9 +55,8 @@ const Header = ({ siteTitle }) => (
             float: 'right'
           }}
           >
-          Contact
+          Contact 
           </Link>
-      </h1>
     </div>
   </div>
 )

@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 
 import Header from '../components/header'
-import './index.css'
+import './index.scss'
 
 const Layout = ({ children, data }) => (
   <div>
