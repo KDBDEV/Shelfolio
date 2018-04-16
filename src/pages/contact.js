@@ -5,7 +5,6 @@ const Contact = () => (
   <div>
     <h1>Lets talk</h1>
     <p>Here is my contact info</p>
-    <Link to="/">Go back to the homepage</Link>
   </div>
 )
 
