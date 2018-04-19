@@ -3,7 +3,15 @@ module.exports = {
     title: 'Shelby Herndon',
   },
   plugins: [
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: 'tcag1fmku1kj',
+        accessToken: '800645f70d35685ffcd4a4b3512b4f56a4b2687a0d1907c5143b0b8a94a1b40f'
+      }
+    },
     'gatsby-plugin-react-helmet',
+    'gatsby-transformer-remark',
     'gatsby-plugin-sass',
     {
       resolve: `gatsby-plugin-favicon`,
