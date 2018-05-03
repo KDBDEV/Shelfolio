@@ -3,6 +3,18 @@ module.exports = {
     title: 'Shelby Herndon',
   },
   plugins: [
+    'gatsby-plugin-react-next',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
+    'gatsby-plugin-styled-components',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+        options: {
+          siteUrl: `https://www.houseofherons.comg`,
+        },
+      },
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -10,9 +22,6 @@ module.exports = {
         accessToken: '800645f70d35685ffcd4a4b3512b4f56a4b2687a0d1907c5143b0b8a94a1b40f'
       }
     },
-    'gatsby-plugin-react-helmet',
-    'gatsby-transformer-remark',
-    'gatsby-plugin-sass',
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
