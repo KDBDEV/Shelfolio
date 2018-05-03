@@ -6,3 +6,5 @@ const Gallery = ({ data }) => {
         </div>
     )
 }
+
+export default Gallery
